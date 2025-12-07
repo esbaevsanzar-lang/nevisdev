@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import generics
-from .models import Kurs, Sertificat, Student, Worker, WorkerCategory, StudyRequest, JobRequest, Contacts
-from .serializers import KursSerializer, SertificatSerializer, StudentSerializer, WorkerSerializer, WorkerCategorySerializer, StudyRequestSerializer, JobRequestSerializer, ContactsSerializer
+from .models import Kurs, Sertificat, Students, Worker, WorkerCategory, StudyRequest, JobRequest, Contacts
+from .serializers import KursSerializer, SertificatSerializer, StudentsSerializer, WorkerSerializer, WorkerCategorySerializer, StudyRequestSerializer, JobRequestSerializer, ContactsSerializer
 from telegram_notify import send_telegram_message
 
 
@@ -14,9 +14,9 @@ class SertificatView(generics.ListCreateAPIView):
     queryset = Sertificat.objects.all()
     serializer_class = SertificatSerializer
 
-class StudentView(generics.ListCreateAPIView):
-    queryset = Student.objects.all()
-    serializer_class = StudentSerializer
+class StudentsView(generics.ListCreateAPIView):
+    queryset = Students.objects.all()
+    serializer_class = StudentsSerializer
 
 class WorkerCategoryView(generics.ListCreateAPIView):
     queryset = WorkerCategory.objects.all()

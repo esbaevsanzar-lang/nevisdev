@@ -16,7 +16,7 @@ class Sertificat(models.Model):
     img = models.ImageField(upload_to="img/")
 
 
-class Student(models.Model):
+class Students(models.Model):
     name = models.CharField(max_length=10)
     surname = models.CharField(max_length=15)
     age = models.IntegerField(null=True)

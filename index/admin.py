@@ -9,9 +9,9 @@ class KursAdmin(admin.ModelAdmin):
 class SertificatAdmin(admin.ModelAdmin):
     model = Sertificat
 
-@admin.register(Student)
+@admin.register(Students)
 class StudentAdmin(admin.ModelAdmin):
-    model = Student
+    model = Students
 
 @admin.register(Worker)
 class WorkerAdmin(admin.ModelAdmin):

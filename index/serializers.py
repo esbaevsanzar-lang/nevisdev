@@ -11,9 +11,9 @@ class SertificatSerializer(serializers.ModelSerializer):
         model = Sertificat
         fields = "__all__"
 
-class StudentSerializer(serializers.ModelSerializer):
+class StudentsSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Student
+        model = Students
         fields = "__all__"
 
 class WorkerCategorySerializer(serializers.ModelSerializer):
